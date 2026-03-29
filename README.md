@@ -46,7 +46,7 @@ The agent receives natural language instructions and autonomously calls these to
 Install from [pyproject.toml](pyproject.toml):
 
 ```bash
-pip install -e .
+uv sync
 ```
 
 Ensure Ollama is running locally with the desired model available (default: `minimax-m2.5:cloud`).
@@ -68,7 +68,7 @@ The agent's system prompt is: "You are a helpful assistant for converting Jupyte
 run the agent script directly:
 
 ```bash
-python nb2pdf_agent.py
+uv run nb2pdf_agent.py
 ```
 
 The script will:
